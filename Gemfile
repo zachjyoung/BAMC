@@ -5,22 +5,8 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-<<<<<<< Updated upstream
-gem 'pg' 
-
-group :test, :development do
-  gem 'capybara'
-  gem 'rspec-rails'
-  gem "nyan-cat-formatter"
-  gem 'factory_girl_rails'
-  gem 'guard-rspec'
-
-end
-
-=======
 gem 'pg'
 gem 'haml'
->>>>>>> Stashed changes
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -39,6 +25,14 @@ gem 'jquery-rails'
 
 group :development do
   gem 'better_errors'
+end
+
+group :test, :development do
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem "nyan-cat-formatter"
+  gem 'factory_girl_rails'
+  gem 'guard-rspec'
 end
 
 # To use ActiveModel has_secure_password

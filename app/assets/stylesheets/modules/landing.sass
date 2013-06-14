@@ -18,8 +18,17 @@
     style: italic
   color: $white
 
+.track_row
+  margin-bottom: 8px
+  overflow: auto
+  padding: 10px 20px
+  +background-image(linear-gradient(rgba($black, .2), rgba($black, .35), rgba($black, .35)))
+  +border-radius(3px)
+
+
 .track_title, .track_category, .track_play, .track_download
   float: left
   width: 25%
-  text-align: center
   font-size: 1.25em
+  text-align: center
+
