@@ -5,6 +5,7 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+<<<<<<< Updated upstream
 gem 'pg' 
 
 group :test, :development do
@@ -16,11 +17,16 @@ group :test, :development do
 
 end
 
+=======
+gem 'pg'
+gem 'haml'
+>>>>>>> Stashed changes
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
+  gem 'compass-rails'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -30,6 +36,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development do
+  gem 'better_errors'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

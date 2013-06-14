@@ -1,0 +1,16 @@
+@import base
+
+.banner_image
+  background:
+    image: url(image_path('banner.jpg'))
+    repeat: no-repeat
+    position: center center
+  height: 500px
+  +background-size(cover)
+
+.banner_image_copy
+  font:
+    family: 'ltc-bodoni-175'
+    size: 2.5em
+    style: italic
+  color: $white
