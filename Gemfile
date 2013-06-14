@@ -5,7 +5,16 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'pg' 
+
+group :test, :development do
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem "nyan-cat-formatter"
+  gem 'factory_girl_rails'
+  gem 'guard-rspec'
+
+end
 
 
 # Gems used only for assets and not required
