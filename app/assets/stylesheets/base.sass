@@ -1,19 +1,23 @@
 @import compass/reset
 @import compass/css3
 
-$black: #0e0015
 $white: #FFFFFF
-$purple: #673FB9
+$purple: #6331AD
+$d-purple: #333366
+$black: darken($d-purple, 22%)
+$l-gray: #D8D8D8
 
 body
   line-height: 1.5
-  background-color: $purple
+  // background-color: $d-purple
   // +background-image(radial-gradient(45px 45px, cover, rgb(255, 0, 0) 0%, rgb(0, 0, 255) 100%))
   color: $white
+
+h1, p
   font-family: 'proxima-nova', sans-serif
 
-// .wrap
-//   margin:
-//     right: auto
-//     left: auto
-//   max-width: 980px
+.wrap
+  margin:
+    right: 1em
+    left: 1em
+  max-width: 980px

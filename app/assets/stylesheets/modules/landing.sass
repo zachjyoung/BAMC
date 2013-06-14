@@ -1,34 +1,34 @@
 @import base
 
 .banner_image
+  position: relative
   background:
-    image: url(image_path('banner.jpg'))
+    color: $l-gray
     repeat: no-repeat
     position: center center
-  height: 500px
+  height: 300px
   +background-size(cover)
 
 .banner_image_copy
-  position: relative
-  top: 5em
-  max-width: 18em
+  position: absolute
+  bottom: 5%
+  max-width: 75%
   font:
     family: 'ratio'
-    size: 2.25em
+    size: 1.5em
     style: italic
-  color: $white
 
 .track_row
-  margin-bottom: 8px
-  overflow: auto
-  padding: 10px 20px
-  +background-image(linear-gradient(rgba($black, .2), rgba($black, .35), rgba($black, .35)))
-  +border-radius(3px)
+  // margin-bottom: 8px
+  // overflow: auto
+  // padding: 10px 20px
+  // +background-image(linear-gradient(rgba($black, .2), rgba($black, .35), rgba($black, .35)))
+  // +border-radius(3px)
 
 
 .track_title, .track_category, .track_play, .track_download
-  float: left
-  width: 25%
-  font-size: 1.25em
-  text-align: center
+  // float: left
+  // width: 25%
+  // font-size: 1.25em
+  // text-align: center
 

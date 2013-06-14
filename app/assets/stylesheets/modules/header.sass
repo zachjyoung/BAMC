@@ -1,16 +1,18 @@
 @import base
 
 .header
+  z-index: 10
   position: fixed
 
 .logo
-  margin:
-    top: .75em
-    bottom: .75em
-    left: 1.5em
+  margin: .5em
   padding: 3px
+  position: absolute
+  top: 0
   width: 120px
   border: 5px solid $white
-  background-color: $black
+  background-color: $d-purple
+  // +box-shadow($black 0 0 10px)
   font-size: 2em
   text-align: center
+  color: $white
