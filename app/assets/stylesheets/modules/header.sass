@@ -5,9 +5,6 @@
   position: fixed
 
 .logo
-  font:
-    family: 'proxima-nova', 'din', sans-serif
-    weight: 800
   margin: .5em
   padding: 3px
   position: absolute
@@ -15,12 +12,19 @@
   width: 120px
   border: 6px solid $white
   background-color: $black
-  +text-shadow(-1px -1px 1px $black)
-  +box-shadow($black 0 0 3px inset)
-  font-size: 2em
   text-align: center
+  font:
+    size: 2em
+    weight: 800
+    family: 'proxima-nova', 'din', sans-serif
   color: $white
-  +transition-duration(.5s)
-  +transition-property(background-color)
+  +transition-duration(.35s)
+  +transition-property(outline)
   &:hover
-    background-color: $purple
+    border: 6px solid $purple
+    outline: 6px solid $white
+
+.triangle
+  border:
+    bottom: 100px solid transparent
+    left: 250px solid $purple
