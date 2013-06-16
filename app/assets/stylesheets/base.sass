@@ -5,18 +5,23 @@ body
   line-height: 1.5
   background-color: $black
   // +background-image(radial-gradient(45px 45px, cover, rgb(255, 0, 0) 0%, rgb(0, 0, 255) 100%))
-  color: $white
+  // color: $white
 
-div, a, h1, h2, p, input, span, label, textarea
+a, h1, h2, p, input, span, label, textarea
   font:
-    family: 'Open Sans', sans-serif
+    family: 'Montserrat', sans-serif
 
 a
   text-decoration: none
   color: $white
 
 .wrap
-  margin:
-    right: 1em
-    left: 1em
   max-width: 800px
+  @media (max-width: 320px)
+    margin:
+      right: 1em
+      left: 1em
+  @media (min-width: 320px)
+    margin:
+      right: 5%
+      left: 5%

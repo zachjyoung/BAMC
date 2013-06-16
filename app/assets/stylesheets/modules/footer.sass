@@ -8,5 +8,26 @@
 //   src: url('/assets/fonts/fontello.eot')
 //   src: url('/assets/fonts/fontello.eot?#iefix') format('eot'), url('/assets/fonts/fontello.ttf') format('truetype'), url('/fonts/fontello.woff') format('woff')
 
-.fontello
-  font-family: 'fontello'
+// .fontello
+//   font-family: 'fontello'
+
+.top_footer
+  padding:
+    top: 1em
+    bottom: 1em
+  background-color: rgba($purple, .25)
+
+.top_footer_link
+  display: block
+  color: $purple
+  +transition-duration(.25s)
+  +transition-property(color)
+  &:hover
+    color: $white
+
+.bottom_footer
+  padding:
+    top: 1em
+    bottom: 1em
+  background-color: $purple
+  color: $black

@@ -1,5 +1,42 @@
 @import load
 
 .main
-  height: 150em
+  margin-bottom: 20em
   // +background-image(linear-gradient(left top, $black, $d-purple))
+
+.banner_image
+  position: relative
+  background-color: $l-gray
+  // background:
+  //   image: url(/assets/record.jpg)
+  //   position: center center
+  //   size: cover
+  height: 300px
+  border-bottom: 6px solid rgba($purple, .5)
+  +box-shadow(0 0 0 30px $purple)
+
+.banner_image_copy
+  position: absolute
+  bottom: 5%
+  max-width: 75%
+  font:
+    family: 'didot'
+    size: 1.5em
+    style: italic
+  // color: $white
+  color: $black
+
+.section_title
+  margin-top: 80px
+  font:
+    family: 'grand hotel'
+    size: 3em
+  color: $purple
+
+.search
+  width: 100%
+  border: 1px solid $purple
+  font-size: 16px
+  padding: 10px
+  +box-sizing(border-box)
+  margin-bottom: 30px

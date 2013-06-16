@@ -1,0 +1,13 @@
+@import load
+
+.primary_button
+  border-color: lighten($black, 15%)
+  +background-image(linear-gradient(lighten($black, 15%), lighten($black, 4%)))
+  &:hover
+    +background-image(linear-gradient(lighten($black, 15%), lighten($black, 15%)))
+
+.secondary_button
+  border-color: lighten($d-purple, 5%)
+  +background-image(linear-gradient(lighten($d-purple, 5%), darken($d-purple, 10%)))
+  &:hover
+    +background-image(linear-gradient(lighten($d-purple, 5%), lighten($d-purple, 5%)))
