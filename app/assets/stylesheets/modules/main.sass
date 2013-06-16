@@ -1,9 +1,5 @@
 @import load
 
-.main
-  margin-bottom: 20em
-  // +background-image(linear-gradient(left top, $black, $d-purple))
-
 .banner_image
   position: relative
   background-color: $l-gray
@@ -11,9 +7,12 @@
   //   image: url(/assets/record.jpg)
   //   position: center center
   //   size: cover
-  height: 300px
   border-bottom: 6px solid rgba($purple, .5)
   +box-shadow(0 0 0 30px $purple)
+  @media (max-width: 600px)
+    height: 300px
+  @media (min-width: 600px)
+    height: 400px
 
 .banner_image_copy
   position: absolute
@@ -23,7 +22,6 @@
     family: 'didot'
     size: 1.5em
     style: italic
-  // color: $white
   color: $black
 
 .section_title
