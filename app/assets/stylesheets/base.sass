@@ -1,11 +1,5 @@
 @import compass/reset
-@import compass/css3
-
-$white: #FFFFFF
-$purple: #8146d9
-$d-purple: #333366
-$black: darken($d-purple, 22%)
-$l-gray: #D8D8D8
+@import load
 
 body
   line-height: 1.5
@@ -13,19 +7,16 @@ body
   // +background-image(radial-gradient(45px 45px, cover, rgb(255, 0, 0) 0%, rgb(0, 0, 255) 100%))
   color: $white
 
-a, p
+div, a, h1, h2, p, input, span, label, textarea
   font:
-    family: 'ratio', 'delicious', sans-serif
-    size: 400
+    family: 'Open Sans', sans-serif
 
 a
   text-decoration: none
-
-p
-  color: $purple
+  color: $white
 
 .wrap
   margin:
     right: 1em
     left: 1em
-  max-width: 980px
+  max-width: 800px

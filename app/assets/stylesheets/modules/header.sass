@@ -1,11 +1,11 @@
-@import base
+@import load
 
 .header
-  z-index: 10
   position: fixed
+  z-index: 10
 
 .logo
-  margin: .5em
+  margin: 18px
   padding: 3px
   position: absolute
   top: 0
@@ -16,15 +16,14 @@
   font:
     size: 2em
     weight: 800
-    family: 'proxima-nova', 'din', sans-serif
+    family: 'Montserrat', sans-serif
   color: $white
   +transition-duration(.35s)
-  +transition-property(outline)
+  +transition-property(box-shadow)
   &:hover
-    border: 6px solid $purple
-    outline: 6px solid $white
+    +box-shadow(0 0 0 6px $black, 0 0 0 12px $white)
 
 .triangle
   border:
-    bottom: 100px solid transparent
+    bottom: 120px solid transparent
     left: 250px solid $purple
