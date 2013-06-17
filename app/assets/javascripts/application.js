@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require soundmanager2
+//= require mp3-player-button
 //= require_tree .
