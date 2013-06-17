@@ -37,8 +37,11 @@
   &:before
     content: '▶'
 
-.to_pause
-  &:before
+.to_pause:before
+  content: '❙ ❙'
+
+@-moz-document url-prefix()
+  .to_pause:before
     content: '❙❙'
 
 .track_download
