@@ -37,9 +37,9 @@ function BasicMP3Player() {
 
   this.css = {
     // CSS class names appended to link during various states
-    sDefault: 'track_play', // default state
+    sDefault: 'track_preview', // default state
     sLoading: 'sm2_loading',
-    sPlaying: 'sm2_playing',
+    sPlaying: 'to_pause',
     sPaused: 'sm2_paused'
   };
 
