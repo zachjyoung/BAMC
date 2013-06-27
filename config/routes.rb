@@ -1,4 +1,6 @@
 Bamc::Application.routes.draw do
+  get "checkout/beats_checkout"
+
   devise_for :models
 
   # The priority is based upon order of creation:
